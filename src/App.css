@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Kanit:400,500,600,700,800,900');
+
 .App {
   text-align: center;
 }
@@ -35,4 +38,75 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.color-primary {
+  color: #075208;
+}
+
+.color-secondary {
+  color: #217922;
+}
+
+.font-super {
+  font-family: 'Poppins', "Kanit" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 32px !important;
+  line-height: 48px !important;
+  transition: all 0.5s ease;
+}
+
+.font-header {
+  font-family: 'Poppins', "Kanit" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+  transition: all 0.5s ease;
+}
+
+.font-subheader {
+  font-family: 'Poppins', "Kanit" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  line-height: 30px !important;
+  transition: all 0.5s ease;
+}
+
+.font-body {
+  font-family: 'Poppins', "Kanit" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+  transition: all 0.5s ease;
+}
+
+.font-bodybold {
+  font-family: 'Poppins', "Kanit" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+  transition: all 0.5s ease;
+}
+
+.font-subbody {
+  font-family: 'Poppins', "Kanit" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 21px !important;
+  transition: all 0.5s ease;
+}
+
+.font-subbodybold {
+  font-family: 'Poppins', "Kanit" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  line-height: 21px !important;
+  transition: all 0.5s ease;
 }
