@@ -5,14 +5,50 @@ import Grid from "@mui/material/Grid";
 
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
 import EmojiEventsOutlinedIcon from "@mui/icons-material/EmojiEventsOutlined";
-import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
-import InstagramIcon from "@mui/icons-material/Instagram";
 
 import { SiteButton } from "../components/SiteButton";
-import { member_list } from "../data/member";
 
-function Member() {
+function Staff() {
+  const staff_list = [
+    {
+      image_path: "member-pic.jpg",
+      id: "400123",
+      name: "Hongtae Haha",
+      nickname: "Hongtae",
+      occupation: "นักศึกษาปริญญาตรี สมาชิคสภาผูเแืน ราษฎร",
+      slogan: "หนอนที่ตื่นเช้าจะโดนนกกิน",
+      email: "hongtae2020@gmail.com",
+    },
+    {
+      image_path: "member-pic.jpg",
+      id: "400000",
+      name: "Name Surname",
+      nickname: "Nickname",
+      occupation: "",
+      slogan: "-",
+      email: "-",
+    },
+    {
+      image_path: "member-pic.jpg",
+      id: "400000",
+      name: "Name Surname",
+      nickname: "Nickname",
+      occupation: "",
+      slogan: "-",
+      email: "-",
+    },
+    {
+      image_path: "member-pic.jpg",
+      id: "400000",
+      name: "Name Surname",
+      nickname: "Nickname",
+      occupation: "",
+      slogan: "-",
+      email: "-",
+    },
+  ];
+
   return (
     <div style={{ backgroundColor: "#F8F8F8" }}>
       <Container style={{ paddingTop: "64px" }}>
@@ -26,16 +62,16 @@ function Member() {
           <Grid item>
             <Grid container direction="column" alignItems="center" gap={0}>
               <Grid item>
-                <div className="font-bodybold">Member</div>
+                <div className="font-bodybold">Staff Member</div>
               </Grid>
               <Grid item>
-                <div className="font-super color-primary">Hall Of Fame</div>
+                <div className="font-super color-primary">Our Professor</div>
               </Grid>
             </Grid>
           </Grid>
           <Grid item style={{ width: "100%" }}>
             <Grid container spacing={4}>
-              {member_list.map((data, index) => {
+              {staff_list.map((data, index) => {
                 return (
                   <Grid item xs={12} sm={6} md={6} lg={4} key={"index" + index}>
                     <Grid
@@ -109,7 +145,7 @@ function Member() {
                           <Grid item style={{ width: "100%" }}>
                             <Grid container gap={1}>
                               <Grid item className="color-primary">
-                                <PhoneOutlinedIcon />
+                                <EmojiEventsOutlinedIcon />
                               </Grid>
                               <Grid
                                 item
@@ -126,7 +162,7 @@ function Member() {
                                     whiteSpace: "nowrap",
                                   }}
                                 >
-                                  {data.phone}
+                                  {data.slogan}
                                 </div>
                               </Grid>
                             </Grid>
@@ -156,31 +192,6 @@ function Member() {
                               </Grid>
                             </Grid>
                           </Grid>
-                          <Grid item style={{ width: "100%" }}>
-                            <Grid container gap={1}>
-                              <Grid item className="color-primary">
-                                <InstagramIcon />
-                              </Grid>
-                              <Grid
-                                item
-                                xs
-                                style={{
-                                  overflow: "hidden",
-                                }}
-                              >
-                                <div
-                                  className="font-body"
-                                  style={{
-                                    overflow: "hidden",
-                                    textOverflow: "ellipsis",
-                                    whiteSpace: "nowrap",
-                                  }}
-                                >
-                                  {data.ig}
-                                </div>
-                              </Grid>
-                            </Grid>
-                          </Grid>
                         </Grid>
                       </Grid>
                     </Grid>
@@ -195,4 +206,4 @@ function Member() {
   );
 }
 
-export default Member;
+export default Staff;

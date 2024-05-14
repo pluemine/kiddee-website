@@ -110,3 +110,25 @@
   line-height: 21px !important;
   transition: all 0.5s ease;
 }
+
+.member-card {
+  padding: 24px 24px;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.tag {
+  background-color: #DBEADC;
+  color: #217922;
+  padding: 2px 4px;
+  border-radius: 2px;
+  width: fit-content;
+
+  font-family: 'Poppins', "Kanit" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  line-height: 21px !important;
+  transition: all 0.5s ease;
+}
