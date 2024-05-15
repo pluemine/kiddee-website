@@ -14,7 +14,15 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import { SiteButton } from "../components/SiteButton";
 import { member_list } from "../data/member";
 
-function Member() {
+import { useEffect } from "react";
+
+function Member(props) {
+  const { setPage } = props;
+
+  useEffect(() => {
+    setPage("Member");
+  });
+
   return (
     <div style={{ backgroundColor: "#F8F8F8" }}>
       <Container style={{ paddingTop: "64px", paddingBottom: "64px" }}>
