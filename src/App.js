@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="Navbar">
-      <NavScrollExample />
+      <NavScrollExample page={page} />
         <div className="body">
           <ThemeProvider theme={theme}>
             <HashRouter scrollIndicatorInsets={{ right: 1 }}>

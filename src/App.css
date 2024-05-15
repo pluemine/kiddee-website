@@ -48,6 +48,12 @@
   color: #217922;
 }
 
+.navbar-selected {
+  color: #075208 !important;
+  font-weight: 600 !important;
+  font-family: 'Poppins', "Kanit" !important;
+}
+
 .font-super {
   font-family: 'Poppins', "Kanit" !important;
   font-style: normal !important;

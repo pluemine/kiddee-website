@@ -4,8 +4,15 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
 import { SiteButton } from "../components/SiteButton";
+import { useEffect } from "react";
 
-function Home() {
+function Home(props) {
+  const { setPage } = props;
+
+useEffect(() => {
+  setPage("Home");
+});
+
   return (
     <Container>
       <Grid
