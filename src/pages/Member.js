@@ -128,7 +128,7 @@ function Member() {
                                     whiteSpace: "nowrap",
                                   }}
                                 >
-                                  Data Science
+                                  {data.interest}
                                 </div>
                               </Grid>
                             </Grid>
@@ -228,9 +228,11 @@ function Member() {
                                 xs
                                 style={{
                                   overflow: "hidden",
+                                  textOverflow: "ellipsis",
+                                  whiteSpace: "nowrap",
                                 }}
                               >
-                                <div
+                                <a
                                   className="font-body color-primary"
                                   style={{
                                     overflow: "hidden",
@@ -239,9 +241,10 @@ function Member() {
                                     textDecoration: "underline",
                                     cursor: "pointer",
                                   }}
+                                  href={data.link}
                                 >
-                                  {data.id} Video Name
-                                </div>
+                                  {data.video}
+                                </a>
                               </Grid>
                             </Grid>
                           </Grid>
