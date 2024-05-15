@@ -6,6 +6,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Member from "./pages/Member";
 import Staff from "./pages/Staff";
+import Gallery from "./pages/Gallery";
 
 function App() {
   const [page, setPage] = useState();
@@ -33,6 +34,11 @@ function App() {
               element={<Member setPage={setPage} />}
             />
             <Route exact path="/staff" element={<Staff setPage={setPage} />} />
+            <Route
+              exact
+              path="/gallery"
+              element={<Gallery setPage={setPage} />}
+            />
           </Routes>
         </HashRouter>
       </ThemeProvider>
