@@ -12,7 +12,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 
 import { SiteButton } from "../components/SiteButton";
-import { member_list } from "../data/member";
+import { ta_list, member_list } from "../data/member";
 
 import { useEffect } from "react";
 
@@ -25,7 +25,7 @@ function Member(props) {
 
   return (
     <div style={{ backgroundColor: "#F8F8F8" }}>
-      <Container style={{ paddingTop: "64px", paddingBottom: "64px" }}>
+      <Container style={{ paddingTop: "96px", paddingBottom: "96px" }}>
         <Grid
           container
           direction="column"
@@ -36,10 +36,93 @@ function Member(props) {
           <Grid item>
             <Grid container direction="column" alignItems="center" gap={0}>
               <Grid item>
-                <div className="font-bodybold">Member</div>
+                <div className="font-bodybold">Legendary</div>
               </Grid>
               <Grid item>
-                <div className="font-super color-primary">Hall Of Fame</div>
+                <div className="font-super color-primary">Committee</div>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item>
+            <img
+              src="ajarn_kiddee.jpeg"
+              style={{ borderRadius: "8px", maxWidth: "720px", width: "100%" }}
+            />
+          </Grid>
+          <hr
+            className="line"
+            style={{
+              width: "100%",
+            }}
+          />
+          <Grid item>
+            <Grid container direction="column" alignItems="center" gap={0}>
+              <Grid item>
+                <div className="font-bodybold">Legendary</div>
+              </Grid>
+              <Grid item>
+                <div className="font-super color-primary">
+                  Teacher Assistant
+                </div>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item style={{ width: "100%" }}>
+            <Grid container justifyContent="center" spacing={4}>
+              {ta_list.map((data, index) => {
+                return (
+                  <Grid item xs={12} sm={6} md={6} lg={4} key={"index" + index}>
+                    <Grid
+                      container
+                      className="member-card"
+                      direction="column"
+                      alignItems="center"
+                      gap={2}
+                    >
+                      <Grid item>
+                        <img
+                          src={data.image_path}
+                          style={{ height: "180px", borderRadius: "180px" }}
+                        />
+                      </Grid>
+                      <Grid item>
+                        <Grid
+                          container
+                          direction="column"
+                          gap={1}
+                          alignItems="center"
+                        >
+                          <Grid item style={{ textAlign: "center" }}>
+                            <div className="font-subheader">{data.name}</div>
+                          </Grid>
+                          <Grid item>
+                            <div className="font-bodybold">
+                              {data.nickname
+                                ? "(" + data.nickname + ")"
+                                : undefined}
+                            </div>
+                          </Grid>
+                        </Grid>
+                      </Grid>
+                    </Grid>
+                  </Grid>
+                );
+              })}
+            </Grid>
+          </Grid>
+          <hr
+            className="line"
+            style={{
+              width: "100%",
+            }}
+          />
+          <Grid item>
+            <Grid container direction="column" alignItems="center" gap={0}>
+              <Grid item>
+                <div className="font-bodybold">Hall of Fame</div>
+              </Grid>
+              <Grid item>
+                <div className="font-super color-primary">Members</div>
               </Grid>
             </Grid>
           </Grid>
@@ -53,7 +136,7 @@ function Member(props) {
                       className="member-card"
                       direction="column"
                       alignItems="center"
-                      gap={2}
+                      gap={1}
                     >
                       <Grid item>
                         <img
@@ -84,9 +167,9 @@ function Member(props) {
                         </Grid>
                       </Grid>
                       <hr
+                        className="line"
                         style={{
                           width: "100%",
-                          borderTop: "1px solid #EBEBEB",
                         }}
                       />
                       <Grid item style={{ width: "100%" }}>
@@ -141,7 +224,7 @@ function Member(props) {
                               </Grid>
                             </Grid>
                           </Grid>
-                          <Grid item style={{ width: "100%" }}>
+                          {/* <Grid item style={{ width: "100%" }}>
                             <Grid container gap={1}>
                               <Grid item className="color-primary">
                                 <PhoneOutlinedIcon />
@@ -165,7 +248,7 @@ function Member(props) {
                                 </div>
                               </Grid>
                             </Grid>
-                          </Grid>
+                          </Grid> */}
                           <Grid item style={{ width: "100%" }}>
                             <Grid container gap={1}>
                               <Grid item className="color-primary">
@@ -219,9 +302,9 @@ function Member(props) {
                         </Grid>
                       </Grid>
                       <hr
+                        className="line"
                         style={{
                           width: "100%",
-                          borderTop: "1px solid #EBEBEB",
                         }}
                       />
                       <Grid item style={{ width: "100%" }}>

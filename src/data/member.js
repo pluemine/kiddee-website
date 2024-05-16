@@ -1,3 +1,16 @@
+export const ta_list = [
+  {
+    image_path: "/ta/pbest.jpg",
+    name: "นิสิทธิ์ สมิทธ์สมบูรณ์",
+    nickname: "เบส",
+  },
+  {
+    image_path: "/ta/pbest.jpg",
+    name: "ภัทรียา พิรเวชสกุล",
+    nickname: "ครีม",
+  },
+];
+
 export const member_list = [
   {
     image_path: "member/Super AI SS 400002.jpg",
@@ -62,7 +75,7 @@ export const member_list = [
     email: "moonny1621@gmail.com",
     ig: "jw.junjaow",
     video: "เปิดโลก AI จิ๋ววว",
-    link: "https://www.youtube.com/watch?v=L3mDIOgD9JQ&t=",
+    link: "https://youtu.be/L3mDIOgD9JQ?si=Zw0ubheIqlTXi75R",
   },
   {
     image_path: "member/Super AI SS 400187.jpg",
@@ -75,7 +88,7 @@ export const member_list = [
     email: "pawithgun41@gmail.com",
     ig: "pawithgun",
     video: "Confusion Matrix",
-    link: "https://www.youtube.com/watch?v=pFSlCdrXyyA",
+    link: "https://youtu.be/pFSlCdrXyyA?si=0RS6IuEpzTJP8uEr",
   },
   {
     image_path: "member/Super AI SS 400286.jpg",
@@ -114,7 +127,7 @@ export const member_list = [
     email: "ntheethut@gmail.com",
     ig: "T",
     video: "Text Summarization",
-    link: "https://www.youtube.com/watch?v=B7neNHOFLyI&t=389s",
+    link: "https://youtu.be/B7neNHOFLyI?si=oOQHV8Ni9b3GWQ09",
   },
   {
     image_path: "member/Super AI SS 400627.jpg",
@@ -127,7 +140,7 @@ export const member_list = [
     email: "nongft09090@gmail.com",
     ig: "noboru_9925",
     video: "Web App AI โฮสบน Goolge Colab โดยใช้ไลบรารี่ Anvil",
-    link: "https://www.youtube.com/watch?v=oYt6HoIAJ78",
+    link: "https://youtu.be/oYt6HoIAJ78?si=bqB4t5bJN8CpIWER",
   },
   {
     image_path: "member/Super AI SS 400688.jpg",
@@ -297,7 +310,7 @@ export const member_list = [
     email: "dungmachoo@gmail.com",
     ig: "Dung Machoo",
     video: "Hello World of Machine Learning",
-    link: "https://www.youtube.com/watch?v=vp6IVF9qV9U",
+    link: "https://youtu.be/vp6IVF9qV9U?si=6gwEcx22efELlCQ1",
   },
   {
     image_path: "member/Super AI SS 402978.jpg",
@@ -310,7 +323,7 @@ export const member_list = [
     email: "takapoltanthavach@gmail.com",
     ig: "dew24888",
     video: "Basic Neural Networks ใน 10 นาที",
-    link: "https://www.youtube.com/watch?v=qBxn9v_JuFw",
+    link: "https://youtu.be/qBxn9v_JuFw?si=izCHq5tJdUZ3Wrn7",
   },
   {
     image_path: "member/Super AI SS 404136.jpg",
@@ -362,6 +375,6 @@ export const member_list = [
     email: "krittapadpor12348@gmail.com",
     ig: "por_kph",
     video: "A Brief history of AI",
-    link: "https://www.youtube.com/watch?v=zh1jln2_C4E&t=1s",
+    link: "https://youtu.be/zh1jln2_C4E?si=1QVMhMQpCuREsTpA",
   },
 ];

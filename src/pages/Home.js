@@ -9,9 +9,9 @@ import { useEffect } from "react";
 function Home(props) {
   const { setPage } = props;
 
-useEffect(() => {
-  setPage("Home");
-});
+  useEffect(() => {
+    setPage("Home");
+  });
 
   return (
     <Container>
@@ -37,7 +37,7 @@ useEffect(() => {
           </Grid>
         </Grid>
         <Grid item>
-          <div className="font-subheader">สโลแกนบ้าน</div>
+          <div className="font-bodybold">"Brings Better Tomorrow"</div>
         </Grid>
         <Grid item>
           <Grid container direction="row" alignItems="center" gap={1}>

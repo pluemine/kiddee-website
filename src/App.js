@@ -5,7 +5,7 @@ import "./App.css";
 
 import Home from "./pages/Home";
 import Member from "./pages/Member";
-import Staff from "./pages/Staff";
+import Clip from "./pages/Clip";
 import Gallery from "./pages/Gallery";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
@@ -40,14 +40,10 @@ function App() {
               <Route exact path="/" element={<Home setPage={setPage} />} />
               <Route
                 exact
-                path="/member"
+                path="/members"
                 element={<Member setPage={setPage} />}
               />
-              <Route
-                exact
-                path="/staff"
-                element={<Staff setPage={setPage} />}
-              />
+              <Route exact path="/clip" element={<Clip setPage={setPage} />} />
               <Route
                 exact
                 path="/gallery"

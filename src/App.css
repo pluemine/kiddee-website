@@ -48,10 +48,8 @@
   color: #217922;
 }
 
-.navbar-selected {
-  color: #075208 !important;
-  font-weight: 600 !important;
-  font-family: 'Poppins', "Kanit" !important;
+.color-tertiary {
+  color: #53ab55;
 }
 
 .font-super {
@@ -137,4 +135,8 @@
   font-size: 12px !important;
   line-height: 21px !important;
   transition: all 0.5s ease;
+}
+
+.line {
+  border-top: 1px solid #b8b8b8 !important;
 }
