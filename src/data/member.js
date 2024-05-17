@@ -5,7 +5,7 @@ export const ta_list = [
     nickname: "เบส",
   },
   {
-    image_path: "/ta/pbest.jpg",
+    image_path: "/ta/pcream.jpg",
     name: "ภัทรียา พิรเวชสกุล",
     nickname: "ครีม",
   },

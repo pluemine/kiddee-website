@@ -21,85 +21,49 @@ function srcset(image, size, rows = 1, cols = 1) {
   };
 }
 
-function Gallery() {
-  const galleryData = [
+function Recognition() {
+  const recognitionData = [
     {
-      img: "gallery/gallery-1.jpeg",
+      img: "recognition/recognition-1.jpeg",
       rows: 2,
       cols: 2,
     },
     {
-      img: "gallery/gallery-2.jpeg",
+      img: "recognition/recognition-2.jpeg",
       cols: 2,
     },
     {
-      img: "gallery/gallery-3.jpeg",
+      img: "recognition/recognition-3.jpeg",
     },
     {
-      img: "gallery/gallery-4.jpeg",
+      img: "recognition/recognition-4.jpeg",
     },
     {
-      img: "gallery/gallery-5.jpeg",
+      img: "recognition/recognition-5.jpeg",
     },
     {
-      img: "gallery/gallery-6.jpeg",
+      img: "recognition/recognition-6.jpeg",
       cols: 2,
     },
     {
-      img: "gallery/gallery-7.jpeg",
+      img: "recognition/recognition-7.jpeg",
     },
     {
-      img: "gallery/gallery-8.jpeg",
+      img: "recognition/recognition-8.jpeg",
     },
     {
-      img: "gallery/gallery-9.jpeg",
+      img: "recognition/recognition-9.jpeg",
       rows: 2,
-    },
-    {
-      img: "gallery/gallery-10.jpeg",
       cols: 2,
     },
     {
-      img: "gallery/gallery-11.jpeg",
+      img: "recognition/recognition-10.jpeg",
     },
     {
-      img: "gallery/gallery-12.jpeg",
+      img: "recognition/recognition-11.jpeg",
     },
     {
-      img: "gallery/gallery-13.jpeg",
-    },
-    {
-      img: "gallery/gallery-14.jpeg",
-      cols: 2,
-    },
-    {
-      img: "gallery/gallery-15.jpeg",
-    },
-    {
-      img: "gallery/gallery-16.jpeg",
-    },
-    {
-      img: "gallery/gallery-17.jpeg",
-      rows: 2,
-    },
-    {
-      img: "gallery/gallery-18.jpeg",
-    },
-    {
-      img: "gallery/gallery-19.jpeg",
-    },
-    {
-      img: "gallery/gallery-20.jpeg",
-    },
-    {
-      img: "gallery/gallery-21.jpeg",
-    },
-    {
-      img: "gallery/gallery-22.jpeg",
-    },
-    {
-      img: "gallery/gallery-23.jpeg",
-      rows: 2,
+      img: "recognition/recognition-12.jpeg",
     },
   ];
 
@@ -116,10 +80,10 @@ function Gallery() {
           <Grid item>
             <Grid container direction="column" alignItems="center" gap={0}>
               <Grid item>
-                <div className="font-bodybold">Gallery</div>
+                <div className="font-bodybold">Pantheon</div>
               </Grid>
               <Grid item>
-                <div className="font-super color-primary">State of the art</div>
+                <div className="font-super color-primary">Recognition</div>
               </Grid>
             </Grid>
           </Grid>
@@ -130,7 +94,7 @@ function Gallery() {
               cols={4}
               //rowHeight={121}
             >
-              {galleryData.map((item) => (
+              {recognitionData.map((item) => (
                 <ImageListItem
                   key={item.img}
                   cols={item.cols || 1}
@@ -152,4 +116,4 @@ function Gallery() {
   );
 }
 
-export default Gallery;
+export default Recognition;

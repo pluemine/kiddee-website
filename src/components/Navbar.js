@@ -25,11 +25,21 @@ const MyNavbar = (props) => {
           {/* <Nav.Link href="#link"></Nav.Link> */}
         </Nav>
         <Nav style={{ padding: "0 32px" }} className="font-body">
-          <Nav.Link href="/#/">Home</Nav.Link>
-          <Nav.Link href="/#/members">Members</Nav.Link>
-          <Nav.Link href="/#/gallery">Gallery</Nav.Link>
-          <Nav.Link href="/#/contact">Recognition</Nav.Link>
-          <Nav.Link href="/#/clip">Clip</Nav.Link>
+          <Nav.Link href="/#/" active>
+            Home
+          </Nav.Link>
+          <Nav.Link href="/#/members" active>
+            Members
+          </Nav.Link>
+          <Nav.Link href="/#/gallery" active>
+            Gallery
+          </Nav.Link>
+          <Nav.Link href="/#/recognition" active>
+            Recognition
+          </Nav.Link>
+          <Nav.Link href="/#/clip" active>
+            Clip
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

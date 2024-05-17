@@ -36,7 +36,7 @@ function Member(props) {
           <Grid item>
             <Grid container direction="column" alignItems="center" gap={0}>
               <Grid item>
-                <div className="font-bodybold">Legendary</div>
+                <div className="font-bodybold">Conquerors</div>
               </Grid>
               <Grid item>
                 <div className="font-super color-primary">Committee</div>
@@ -119,7 +119,7 @@ function Member(props) {
           <Grid item>
             <Grid container direction="column" alignItems="center" gap={0}>
               <Grid item>
-                <div className="font-bodybold">Hall of Fame</div>
+                <div className="font-bodybold">Warriors</div>
               </Grid>
               <Grid item>
                 <div className="font-super color-primary">Members</div>

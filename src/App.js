@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Member from "./pages/Member";
 import Clip from "./pages/Clip";
 import Gallery from "./pages/Gallery";
+import Recognition from "./pages/Recognition";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
@@ -15,9 +16,15 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import NavScrollExample from "./components/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Modal from "react-bootstrap/Modal";
+import { ModalFooter } from "react-bootstrap";
+import { SiteButton } from "./components/SiteButton";
+
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function App() {
   const [page, setPage] = useState();
+  //const [show, setShow] = useState(true);
 
   const theme = createTheme({
     palette: {
@@ -30,12 +37,31 @@ function App() {
     },
   });
 
+  // function handleClose() {
+  //   setShow(false);
+  // }
+
   return (
     <div className="Navbar">
       <NavScrollExample />
+      {/* <Modal show={show} onHide={handleClose}>
+        <Modal.Body>
+          <img src="welcome.png" style={{ width: "100%" }} />
+        </Modal.Body>
+        <ModalFooter>
+          <SiteButton
+            variant="contained"
+            style={{ backgroundColor: "#075208" }}
+            onClick={(e) => handleClose()}
+          >
+            เข้าสู่เว็บไซต์
+          </SiteButton>
+        </ModalFooter>
+      </Modal> */}
       <div className="body">
         <ThemeProvider theme={theme}>
           <HashRouter scrollIndicatorInsets={{ right: 1 }}>
+            <ScrollToTopButton />
             <Routes>
               <Route exact path="/" element={<Home setPage={setPage} />} />
               <Route
@@ -48,6 +74,11 @@ function App() {
                 exact
                 path="/gallery"
                 element={<Gallery setPage={setPage} />}
+              />
+              <Route
+                exact
+                path="/recognition"
+                element={<Recognition setPage={setPage} />}
               />
             </Routes>
           </HashRouter>
